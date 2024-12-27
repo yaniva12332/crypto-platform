@@ -50,7 +50,7 @@ def get_price():
 
 if __name__ == '__main__':
     try:
-    db.create_all()
-except Exception as e:
- print(f"Error creating database: {e}")
+        db.create_all()
+    except Exception as e:
+        print(f"Error creating database: {e}")
     app.run(debug=True, port=5000)

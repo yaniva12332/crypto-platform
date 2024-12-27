@@ -49,5 +49,8 @@ def get_price():
         return jsonify({"error": str(e)}), 400
 
 if __name__ == '__main__':
+    try:
     db.create_all()
+except Exception as e:
+ print(f"Error creating database: {e}")
     app.run(debug=True, port=5000)

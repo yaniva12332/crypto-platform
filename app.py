@@ -12,8 +12,8 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 
 # Binance API
-API_KEY = "YOUR_BINANCE_API_KEY"
-API_SECRET = "YOUR_BINANCE_API_SECRET"
+API_KEY = "ppb14bFJdk1ZOBN0zPtIAKwPTrgflY7WE3DPAti3Lur0lcUdp7W1d9ZLaI3BCQnQ"
+API_SECRET = "dMZiAJgcbM19FAEDxvDX8V7OIQkx8udZQUoOqnmOeUuTE3nKv5yMMDsjZ8crUOTc"
 client = Client(api_key=API_KEY, api_secret=API_SECRET)
 
 # User Model

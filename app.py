@@ -21,7 +21,7 @@ class User(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     username = db.Column(db.String(80), unique=True, nullable=False)
     password = db.Column(db.String(200), nullable=False)
-    subscription_status = db.Column(db.Boolean, defualt=False)
+    subscription_status = db.Column(db.Boolean, server_defualt="0", nullable=False)
 
 @app.route('/register', methods=['POST'])
 def register():
